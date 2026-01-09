@@ -20,5 +20,3 @@ CivicConnect is a community issue reporting and tracking platform designed to im
 - Google Gemini–assisted issue prioritization
 - Role-based access (citizen / authority)
 
-## Live Demo
-(Add your deployed link here)
