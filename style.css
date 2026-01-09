@@ -1,0 +1,163 @@
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #e3f2fd, #f4f6f8);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1565c0, #1e88e5);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 42px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 20px;
+  background: white;
+}
+
+.stat-card {
+  background: #f1f6fb;
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.stat-card h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #1565c0;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+  height: 90px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #125aa3;
+}
+
+/* DASHBOARD */
+.dashboard {
+  background: #eef3f8;
+}
+
+#issueList {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ISSUE CARD */
+.issue-card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+/* PRIORITY */
+.highlight {
+  border-left: 8px solid #d32f2f;
+  background: #fff1f1;
+}
+
+.priority {
+  display: inline-block;
+  background: #d32f2f;
+  color: white;
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+/* STATUS */
+.status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 20px;
+  color: white;
+}
+
+.pending { background: #fb8c00; }
+.resolved { background: #2e7d32; }
+
+/* ACTION BUTTONS */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.resolve-btn {
+  background: #2e7d32;
+}
+
+.delete-btn {
+  background: #d32f2f;
+}
+
+/* WHY */
+.why {
+  background: white;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #e3f2fd;
+}

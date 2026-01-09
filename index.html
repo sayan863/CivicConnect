@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CivicConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>CivicConnect</h1>
+    <p>Report. Track. Resolve community issues transparently.</p>
+  </header>
+
+  <!-- DASHBOARD COUNTERS -->
+  <section class="stats">
+    <div class="stat-card">
+      <h2 id="totalCount">0</h2>
+      <p>Total Issues</p>
+    </div>
+    <div class="stat-card">
+      <h2 id="pendingCount">0</h2>
+      <p>Pending</p>
+    </div>
+    <div class="stat-card">
+      <h2 id="resolvedCount">0</h2>
+      <p>Resolved</p>
+    </div>
+  </section>
+
+  <!-- REPORT FORM -->
+  <section class="report">
+    <h2>Report an Issue</h2>
+
+    <form id="issueForm">
+      <select id="issueType" required>
+        <option value="">Select Issue Type</option>
+        <option>Road</option>
+        <option>Sanitation</option>
+        <option>Safety</option>
+        <option>Other</option>
+      </select>
+
+      <input type="text" id="location" placeholder="Location" required>
+      <textarea id="description" placeholder="Describe the issue" required></textarea>
+
+      <button type="submit">Submit Issue</button>
+    </form>
+  </section>
+
+  <!-- ISSUES -->
+  <section class="dashboard">
+    <h2>Reported Issues</h2>
+    <div id="issueList"></div>
+  </section>
+
+  <section class="why">
+    <h2>Why CivicConnect?</h2>
+    <ul>
+      <li>Transparent issue tracking</li>
+      <li>Priority detection using community reports</li>
+      <li>Time-based urgency awareness</li>
+    </ul>
+  </section>
+
+  <footer>
+    Built for College Hackathon • Team Name
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
