@@ -5,7 +5,6 @@ body {
   color: #333;
 }
 
-/* HEADER */
 header {
   background: linear-gradient(135deg, #1565c0, #1e88e5);
   color: white;
@@ -21,12 +20,15 @@ header p {
   font-size: 18px;
 }
 
+section {
+  padding: 40px 20px;
+}
+
 /* STATS */
 .stats {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 30px 20px;
   background: white;
 }
 
@@ -39,14 +41,7 @@ header p {
 }
 
 .stat-card h2 {
-  font-size: 32px;
-  margin: 0;
   color: #1565c0;
-}
-
-/* SECTIONS */
-section {
-  padding: 40px 20px;
 }
 
 /* FORM */
@@ -63,29 +58,18 @@ input, textarea, select {
   width: 100%;
   margin-bottom: 15px;
   padding: 12px;
-  font-size: 15px;
   border-radius: 6px;
   border: 1px solid #ccc;
-}
-
-textarea {
-  resize: none;
-  height: 90px;
 }
 
 button {
   width: 100%;
   padding: 12px;
-  font-size: 16px;
   background: #1976d2;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-}
-
-button:hover {
-  background: #125aa3;
 }
 
 /* DASHBOARD */
@@ -107,28 +91,24 @@ button:hover {
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-/* PRIORITY */
 .highlight {
   border-left: 8px solid #d32f2f;
   background: #fff1f1;
 }
 
 .priority {
-  display: inline-block;
   background: #d32f2f;
   color: white;
   padding: 4px 10px;
-  font-size: 12px;
   border-radius: 20px;
+  font-size: 12px;
   margin-left: 10px;
 }
 
-/* STATUS */
 .status {
   display: inline-block;
   margin-top: 10px;
   padding: 6px 12px;
-  font-size: 13px;
   border-radius: 20px;
   color: white;
 }
@@ -136,25 +116,23 @@ button:hover {
 .pending { background: #fb8c00; }
 .resolved { background: #2e7d32; }
 
-/* ACTION BUTTONS */
+/* AI INSIGHT */
+.ai-insight {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e3f2fd;
+  border-left: 5px solid #1976d2;
+  font-size: 14px;
+}
+
 .action-buttons {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
 
-.resolve-btn {
-  background: #2e7d32;
-}
-
-.delete-btn {
-  background: #d32f2f;
-}
-
-/* WHY */
-.why {
-  background: white;
-}
+.resolve-btn { background: #2e7d32; }
+.delete-btn { background: #d32f2f; }
 
 footer {
   text-align: center;
