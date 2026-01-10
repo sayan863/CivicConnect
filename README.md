@@ -13,7 +13,11 @@ CivicConnect is a community issue reporting and tracking platform designed to im
 - HTML5
 - CSS3
 - JavaScript
-- Browser LocalStorage
+- Browser LocalStorag
+  
+## AI Tools
+- AI Advisory
+- Conceptual use of Gemini
 
 ## Future Scope
 - Backend integration with municipal systems
