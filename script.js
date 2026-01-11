@@ -66,15 +66,22 @@ function displayIssues() {
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
+  const issueType = document.getElementById("issueType").value;
+  const issueLocation = document
+    .getElementById("location")
+    .value
+    .trim()
+    .toLowerCase();
+  const issueDescription = document.getElementById("description").value;
+
   const newIssue = {
-    type: issueType.value,
-    location: location.value.trim().toLowerCase(),
-    description: description.value,
+    type: issueType,
+    location: issueLocation,
+    description: issueDescription,
     status: "Pending",
     count: 1,
     time: new Date().toISOString()
   };
-
   const existingIndex = issues.findIndex(
     i => i.type === newIssue.type &&
          i.location === newIssue.location &&
@@ -107,3 +114,4 @@ function deleteIssue(index) {
 }
 
 displayIssues();
+
