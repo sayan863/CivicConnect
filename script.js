@@ -82,6 +82,8 @@ form.addEventListener("submit", function (e) {
     count: 1,
     time: new Date().toISOString()
   };
+
+
   const existingIndex = issues.findIndex(
     i => i.type === newIssue.type &&
          i.location === newIssue.location &&
@@ -114,4 +116,3 @@ function deleteIssue(index) {
 }
 
 displayIssues();
-
